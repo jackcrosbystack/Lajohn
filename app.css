@@ -1,0 +1,74 @@
+/* comment */
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+/*imports a font from google fonts */
+
+
+
+/*specify what we want to stlye (like h1 from HTML) and what the style should be */
+
+/* what we are selecting. applies to all h1's (we only have one in this case) */
+h1{
+    /* how to style it */
+    color: black;
+    font-weight: 200;
+    font-size: 70px; /*ems is also something instead of px */
+    text-transform: uppercase; /*makes all letters uppercase */
+    border-top: 5px solid; /*adds a border around the h1. solid is the style of the border  */
+
+}
+
+h2{
+    font-weight: 200;
+}
+
+/* only have one body in HTML so we can style it directly */
+/* background color of the body. everything within the body of HTML will do this unless we override it like with h1 above. This is inheritence  */
+body{
+    background-color: grey; /*custom color (salmon) using hexadecimal code*/
+    color: #2E1263; /*change the text color of everything inside of it (unless we override it) */
+    font-family: "Source Code Pro"; /*change font of everything in the family */
+    font-weight: 200;
+}
+
+img{
+    height: 500px; /*set height of image. px: pixels*/
+    border-radius: 45%;
+}
+
+/* if we did section{ then it it would apply to all sections. but since we gave 
+    it a class/id of .container, it only applies to that class */
+
+#container{
+    display:flex;
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:center;
+    height:100vh; /*100% of the viewport height */
+}
+
+button{
+    margin: 30px auto 0; /* space on outside of border */
+    padding: 20px 25px; /*space bet element and border. on inside of border  padding around the button */
+    background-color: gray; /*button color */
+    color: black; /*text color of button */
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid black; /*border color */
+    text-transform: uppercase;
+    text-decoration: none; /*removes underline */
+    outline: none; /*removes outline */
+    letter-spacing: 4px; /*space between letters */
+
+}
+
+button:hover{
+    transition: 0.5; /*transition time for hover effect */
+    background-color: #2E1263; /*changes color of button when hovered */
+    color: #F69680; /*changes text color of button when hovered */
+    cursor: pointer; /*changes cursor to pointer when hovered */
+    text-decoration: underline; /*adds underline when hovered */
+}
+
+p{
+    font-size: 20px;
+}
